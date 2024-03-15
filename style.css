@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box{
+  height: 80px;
+  margin: 100px 0;
+  position: relative;
+  background-color: rgb(62, 63, 63);
+}
+.box p{
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  color: #fff;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.box-one{
+  width: 100%;
+  background-color: rgb(62, 63, 63);
+  height: 80px;
+  border-left: 4px solid rgb(235, 231, 231);
+  padding-left: 2px;
+  position: absolute;
+  z-index: 2;
+  transition: width 3.5s ease;
+  right: 0;
+}
+.box:hover .box-one{
+  width: 0;
+  transition: width 3.5s ease;
+}
+
